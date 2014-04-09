@@ -72,7 +72,7 @@ namespace wonder_rabbit_project
       { return [](const reciever_t* const){ return true; }; }
     };
     
-    auto to_string(const message_t::launch_e l)
+    static auto to_string(const message_t::launch_e l)
       -> std::string
     {
       switch(l)

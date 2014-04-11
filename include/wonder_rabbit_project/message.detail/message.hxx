@@ -72,6 +72,7 @@ namespace wonder_rabbit_project
       { return [](const reciever_t* const){ return true; }; }
     };
     
+    template<class T = void>
     static auto to_string(const message_t::launch_e l)
       -> std::string
     {

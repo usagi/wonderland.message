@@ -10,7 +10,7 @@ C++ intra-process messaging header-only library.
 
 ## usage
 
-basic usage to see the [exmaple/example.cxx](example/example.cxx).
+basic usage to see the [exmaple/example](example/example).
 
 ## license
 

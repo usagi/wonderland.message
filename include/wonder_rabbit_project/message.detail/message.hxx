@@ -27,6 +27,12 @@ namespace wonder_rabbit_project
         : std::uint_fast8_t
       { async, sync };
       
+      enum class relay_e
+        : std::uint_fast8_t
+      { direct = 1
+      , relay  = direct << 1
+      };
+      
     private:
       predicator_t _predicator;
       functor_t    _functor;

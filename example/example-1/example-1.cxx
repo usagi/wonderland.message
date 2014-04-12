@@ -72,22 +72,17 @@ auto main()
   
   // [1] e1 --> e1, hello, async
   std::cerr << "\n[1]\n";
-  e1->send_message(e1, hello(e1));
+  e1->post_message(e1, hello(e1));
   std::cerr << "something something something...\n";
   e1->invoke_messages();
   
   // [2] e1 --> e1, hello, sync
   std::cerr << "\n[2]\n";
-  e1->send_message
-  ( e1
-  , hello<example_1_t>(e1)
-  , message_t::true_predicator()
-  , message_t::launch_e::sync
-  );
+  e1->send_message(e1, hello(e1));
   
   // [3] e1 --> e2, hello, async
   std::cerr << "\n[3]\n";
-  e1->send_message(e2, hello(e1));
+  e1->post_message(e2, hello(e1));
   e2->invoke_messages();
   
   // create account on the server
@@ -97,7 +92,7 @@ auto main()
   
   // [4] e1 --> server, hello
   std::cerr << "\n[4]\n";
-  e1->send_message(server, hello(e2));
+  e1->post_message(server, hello(e2));
   
   server->invoke_messages();
   
@@ -129,7 +124,6 @@ auto main()
       
       return result;
     }
-  , message_t::launch_e::sync
   );
   
 }

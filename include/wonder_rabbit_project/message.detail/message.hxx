@@ -31,6 +31,7 @@ namespace wonder_rabbit_project
         : std::uint_fast8_t
       { direct = 1
       , relay  = direct << 1
+      , direct_and_relay = direct | relay
       };
       
     private:

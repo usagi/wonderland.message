@@ -14,7 +14,7 @@ basic usage to see the [exmaple/example](example/example).
 
 ## license
 
-[GPLv3](http://www.gnu.org/licenses/gpl.html)
+- [MIT](LICENSE)
 
 ## author
 

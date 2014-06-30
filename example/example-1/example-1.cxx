@@ -1,10 +1,10 @@
 #include <iostream>
 
-#include <wonder_rabbit_project/message.hxx>
+#include <wonder_rabbit_project/wonderland/message.hxx>
 
 namespace
 {
-  using namespace wonder_rabbit_project::message;
+  using namespace wonder_rabbit_project::wonderland::message;
   
   class example_1_t;
   class example_2_t;

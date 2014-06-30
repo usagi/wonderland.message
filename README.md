@@ -1,16 +1,16 @@
-# libWRP-time
+# wonderland.message
 
 C++ intra-process messaging header-only library.
 
 ## support
 
-- GCC-4.8
-- Clang-3.2
-- Emscripten-1.12
+- GCC-4.8.2
+- Clang-3.3
+- Emscripten-1.20.0
 
 ## usage
 
-basic usage to see the [exmaple/example](example/example).
+basic usage to see the [exmaple](example).
 
 ## license
 

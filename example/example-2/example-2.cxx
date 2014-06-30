@@ -1,10 +1,10 @@
 #include <iostream>
 
-#include <wonder_rabbit_project/message.hxx>
+#include <wonder_rabbit_project/wonderland/message.hxx>
 
 namespace
 {
-  using namespace wonder_rabbit_project::message;
+  using namespace wonder_rabbit_project::wonderland::message;
   
   class example_1_t;
   class example_2_t;
@@ -82,7 +82,6 @@ auto main()
   ( e1
   , hello<example_1_t>(e1)
   , message_t::true_predicator()
-  , message_t::launch_e::sync
   );
   
   // [3] e1 --> e2, hello, async
@@ -129,7 +128,6 @@ auto main()
       
       return result;
     }
-  , message_t::launch_e::sync
   );
   
 }
